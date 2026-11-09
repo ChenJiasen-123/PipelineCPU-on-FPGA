@@ -1,0 +1,167 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Jun 16 13:08:29 2026
+| Host         : Chen running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopDebug_control_sets_placed.rpt
+| Design       : TopDebug
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    98 |
+| Unused register locations in slices containing registers |    92 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |            7 |
+| No           | No                    | Yes                    |             249 |           83 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              87 |           39 |
+| Yes          | No                    | Yes                    |            2781 |         1357 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------------+----------------------------------+------------------+----------------+
+|  Clock Signal  |                         Enable Signal                        |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------------+----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | uUartRx/rx_data[7]_i_1_n_0                                   | uDebugCtrl/dmem_wr_data_reg[0]_0 |                1 |              1 |
+|  cpu_clk       | uDebugCtrl/clk_p_cnt0                                        | uUartTx/tx_pin_reg_0             |                1 |              1 |
+|  clk_IBUF_BUFG | uDebugCtrl/dbg_reg_addr[4]_i_1_n_0                           | uDebugCtrl/tx_data_reg[7]_0      |                1 |              1 |
+|  cpu_clk       |                                                              | uDebugCtrl/tx_data_reg[7]_0      |                1 |              1 |
+|  cpu_clk       |                                                              |                                  |                2 |              3 |
+|  clk_IBUF_BUFG | uDebugCtrl/payload_cnt[3]_i_1_n_0                            | uDebugCtrl/tx_data_reg[7]_0      |                2 |              4 |
+|  clk_IBUF_BUFG | uDebugCtrl/resp_buf[0][7]_i_1_n_0                            |                                  |                2 |              4 |
+|  clk_IBUF_BUFG | uDebugCtrl/payload[0][4]_i_1_n_0                             |                                  |                2 |              5 |
+|  clk_IBUF_BUFG | uDebugCtrl/mem_wait_cnt[4]_i_1_n_0                           | uDebugCtrl/tx_data_reg[7]_0      |                2 |              5 |
+|  clk_IBUF_BUFG | uDebugCtrl/payload[3][7]_i_1_n_0                             |                                  |                1 |              6 |
+|  clk_IBUF_BUFG | uUartRx/rx_data[7]_i_1_n_0                                   | uDebugCtrl/tx_data_reg[7]_0      |                1 |              7 |
+|  clk_IBUF_BUFG | uDebugCtrl/payload[2][7]_i_1_n_0                             |                                  |                1 |              8 |
+|  cpu_clk       | uDebugCtrl/clk_p_cnt0                                        | uDebugCtrl/dmem_wr_data_reg[0]_0 |                2 |              8 |
+|  clk_IBUF_BUFG | uDebugCtrl/payload[6][7]_i_1_n_0                             |                                  |                1 |              8 |
+|  clk_IBUF_BUFG | uDebugCtrl/payload[4][7]_i_1_n_0                             |                                  |                4 |              8 |
+|  clk_IBUF_BUFG | uDebugCtrl/payload[7][7]_i_1_n_0                             |                                  |                2 |              8 |
+|  clk_IBUF_BUFG | uDebugCtrl/payload[5][7]_i_1_n_0                             |                                  |                3 |              8 |
+|  clk_IBUF_BUFG | uDebugCtrl/resp_buf[1][7]_i_1_n_0                            |                                  |                5 |              8 |
+|  clk_IBUF_BUFG | uDebugCtrl/tx_data[7]_i_1_n_0                                | uDebugCtrl/tx_data_reg[7]_0      |                2 |              8 |
+|  clk_IBUF_BUFG | uUartTx/tx_shift[7]_i_1_n_0                                  | uDebugCtrl/tx_data_reg[7]_0      |                2 |              8 |
+|  clk_IBUF_BUFG |                                                              | uDebugCtrl/dmem_wr_data_reg[0]_0 |                5 |             11 |
+|  clk_IBUF_BUFG | uDebugCtrl/cmd_reg                                           | uDebugCtrl/tx_data_reg[7]_0      |                5 |             11 |
+|  clk_IBUF_BUFG | uDebugCtrl/dbg_reg_addr[4]_i_1_n_0                           | uDebugCtrl/dmem_wr_data_reg[0]_0 |                5 |             11 |
+|  clk_IBUF_BUFG | uDebugCtrl/inst_dbg_addr[15]_i_1_n_0                         | uDebugCtrl/tx_data_reg[7]_0      |                2 |             14 |
+|  clk_IBUF_BUFG | uDebugCtrl/dmem_dbg_addr[15]_i_1_n_0                         | uDebugCtrl/dmem_wr_data_reg[0]_0 |                3 |             14 |
+|  clk_IBUF_BUFG | uUartRx/clk_cnt[15]_i_1_n_0                                  | uDebugCtrl/dmem_wr_data_reg[0]_0 |                6 |             16 |
+|  clk_IBUF_BUFG |                                                              |                                  |                5 |             20 |
+|  cpu_clk       | uDebugCtrl/clk_p_cnt0                                        | uDebugCtrl/tx_data_reg[7]_0      |                6 |             23 |
+|  clk_IBUF_BUFG | uDebugCtrl/resp_buf[2][7]_i_1_n_0                            |                                  |               18 |             24 |
+|  cpu_clk       | uDebugCtrl/display_val                                       | uUartTx/tx_pin_reg_0             |                8 |             31 |
+|  clk_IBUF_BUFG | uDebugCtrl/dmem_wr_data[31]_i_1_n_0                          | uDebugCtrl/dmem_wr_data_reg[0]_0 |               10 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[31][31][0] | uDebugCtrl/regs_reg[31][0]       |               19 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[8][31][0]  | uDebugCtrl/regs_reg[31][0]       |               26 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[20][31][0] | uDebugCtrl/regs_reg[31][0]       |               17 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[10][31][0] | uDebugCtrl/regs_reg[31][0]       |               19 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[22][31][0] | uDebugCtrl/regs_reg[31][0]       |               14 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[24][31][0] | uDebugCtrl/regs_reg[31][0]       |               16 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[4][31][0]  | uDebugCtrl/regs_reg[31][0]       |               21 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[23][31][0] | uDebugCtrl/regs_reg[31][0]       |               16 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[25][31][0] | uDebugCtrl/regs_reg[31][0]       |               15 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[29][31][0] | uDebugCtrl/regs_reg[31][0]       |               22 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[6][31][0]  | uDebugCtrl/regs_reg[31][0]       |               24 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[7][31][0]  | uDebugCtrl/regs_reg[31][0]       |               19 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[9][31][0]  | uDebugCtrl/regs_reg[31][0]       |               24 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[30][31][0] | uDebugCtrl/regs_reg[31][0]       |               22 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[27][31][0] | uDebugCtrl/regs_reg[31][0]       |               21 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[15][31][0] | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[18][31][0] | uDebugCtrl/regs_reg[31][0]       |               16 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[5][31][0]  | uDebugCtrl/regs_reg[31][0]       |               21 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[11][31][0] | uDebugCtrl/regs_reg[31][0]       |               17 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[21][31][0] | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[12][31][0] | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[16][31][0] | uDebugCtrl/regs_reg[31][0]       |               14 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[19][31][0] | uDebugCtrl/regs_reg[31][0]       |               20 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[13][31][0] | uDebugCtrl/regs_reg[31][0]       |               13 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[17][31][0] | uDebugCtrl/regs_reg[31][0]       |               19 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[26][31][0] | uDebugCtrl/regs_reg[31][0]       |               17 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[1][31][0]  | uDebugCtrl/regs_reg[31][0]       |               17 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[14][31][0] | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[28][31][0] | uDebugCtrl/regs_reg[31][0]       |               19 |             32 |
+|  cpu_clk       | u_cpu/single_cycle_cpu/ifetch_inst/uimem/regs_reg[2][31][0]  | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[10][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               17 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[17][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               13 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[11][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[13][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[15][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               15 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[14][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               19 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[19][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               13 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[12][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               11 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[16][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               17 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[18][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               24 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[4][31]_i_1__0_n_0       | uDebugCtrl/regs_reg[31][0]       |               20 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[1][31]_i_1__0_n_0       | uDebugCtrl/regs_reg[31][0]       |               11 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[5][31]_i_1__0_n_0       | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[8][31]_i_1__0_n_0       | uDebugCtrl/regs_reg[31][0]       |               31 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[7][31]_i_1__0_n_0       | uDebugCtrl/regs_reg[31][0]       |               19 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[20][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[21][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[27][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[30][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               19 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[6][31]_i_1__0_n_0       | uDebugCtrl/regs_reg[31][0]       |               24 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[31][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[29][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[9][31]_i_1__0_n_0       | uDebugCtrl/regs_reg[31][0]       |               21 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[22][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               20 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[23][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               18 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[24][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               20 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[25][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               14 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[26][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               14 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[28][31]_i_1__0_n_0      | uDebugCtrl/regs_reg[31][0]       |               17 |             32 |
+|  cpu_clk       | u_cpu/pipeline_cpu/regfile_inst/regs[2][31]_i_1__0_n_0       | uDebugCtrl/regs_reg[31][0]       |               20 |             32 |
+|  clk_IBUF_BUFG | uDebugCtrl/inst_wr_data[31]_i_1_n_0                          | uDebugCtrl/dmem_wr_data_reg[0]_0 |               13 |             32 |
+|  clk_IBUF_BUFG |                                                              | uUartTx/tx_pin_reg_0             |               10 |             34 |
+|  clk_IBUF_BUFG |                                                              | uDebugCtrl/tx_data_reg[7]_0      |               14 |             43 |
+| ~cpu_clk       |                                                              | uDebugCtrl/regs_reg[31][0]       |               20 |             48 |
+|  cpu_clk       |                                                              | uDebugCtrl/regs_reg[31][0]       |               33 |            112 |
+|  cpu_clk       | u_cpu/pipeline_cpu/ifetch_inst/uimem/pc_fetch_reg[31]        | uDebugCtrl/regs_reg[31][0]       |               36 |            131 |
+|  cpu_clk       | uDebugCtrl/E[0]                                              | uDebugCtrl/regs_reg[31][0]       |              150 |            503 |
++----------------+--------------------------------------------------------------+----------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 3      |                     1 |
+| 4      |                     2 |
+| 5      |                     2 |
+| 6      |                     1 |
+| 7      |                     1 |
+| 8      |                     9 |
+| 11     |                     3 |
+| 14     |                     2 |
+| 16+    |                    73 |
++--------+-----------------------+
+
+

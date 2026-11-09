@@ -1,0 +1,1174 @@
+
+*** Running vivado
+    with args -log TopDebug.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopDebug.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source TopDebug.tcl -notrace
+Command: synth_design -top TopDebug -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 32392 
+WARNING: [Synth 8-992] mem_wb_regWrite is already implicitly declared earlier [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:168]
+WARNING: [Synth 8-992] mem_wb_rd is already implicitly declared earlier [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:179]
+WARNING: [Synth 8-992] load_use_stall is already implicitly declared earlier [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:236]
+WARNING: [Synth 8-992] mem_wb_write_data is already implicitly declared earlier [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:488]
+WARNING: [Synth 8-976] run_started has already been declared [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:141]
+WARNING: [Synth 8-2654] second declaration of run_started ignored [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:141]
+INFO: [Synth 8-994] run_started is declared here [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:76]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 400.195 ; gain = 110.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopDebug' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:1]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'UartRx' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/UartRx.v:8]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter BAUD bound to: 115200 - type: integer 
+	Parameter CLKS_PER_BIT bound to: 868 - type: integer 
+	Parameter HALF_BIT bound to: 434 - type: integer 
+	Parameter S_IDLE bound to: 2'b00 
+	Parameter S_START bound to: 2'b01 
+	Parameter S_DATA bound to: 2'b10 
+	Parameter S_STOP bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/UartRx.v:55]
+INFO: [Synth 8-256] done synthesizing module 'UartRx' (2#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/UartRx.v:8]
+INFO: [Synth 8-638] synthesizing module 'UartTx' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/UartTx.v:8]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter BAUD bound to: 115200 - type: integer 
+	Parameter CLKS_PER_BIT bound to: 868 - type: integer 
+	Parameter S_IDLE bound to: 2'b00 
+	Parameter S_START bound to: 2'b01 
+	Parameter S_DATA bound to: 2'b10 
+	Parameter S_STOP bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/UartTx.v:41]
+INFO: [Synth 8-256] done synthesizing module 'UartTx' (3#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/UartTx.v:8]
+INFO: [Synth 8-638] synthesizing module 'DebugController' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:8]
+	Parameter CMD_PING bound to: 8'b00000000 
+	Parameter CMD_RESET bound to: 8'b00000001 
+	Parameter CMD_RUN bound to: 8'b00000010 
+	Parameter CMD_HALT bound to: 8'b00000011 
+	Parameter CMD_STEP bound to: 8'b00000100 
+	Parameter CMD_READ_REG bound to: 8'b00100001 
+	Parameter CMD_READ_PC bound to: 8'b00100010 
+	Parameter CMD_READ_INST bound to: 8'b00100011 
+	Parameter CMD_READ_DMEM bound to: 8'b00100100 
+	Parameter CMD_WRITE_INST bound to: 8'b01000000 
+	Parameter CMD_WRITE_DMEM bound to: 8'b01000001 
+	Parameter RESP_PONG bound to: 8'b10000000 
+	Parameter RESP_ACK bound to: 8'b10000001 
+	Parameter RESP_DATA32 bound to: 8'b10000010 
+	Parameter RESP_ERR bound to: 8'b11111111 
+	Parameter S_IDLE bound to: 4'b0000 
+	Parameter S_RECV_PAYLOAD bound to: 4'b0001 
+	Parameter S_EXECUTE bound to: 4'b0010 
+	Parameter S_SEND_RESP bound to: 4'b0011 
+	Parameter S_SEND_WAIT bound to: 4'b0100 
+	Parameter S_MEM_WAIT bound to: 4'b0101 
+	Parameter MEM_WAIT_CYCLES bound to: 5'b10100 
+	Parameter STEP_COUNTDOWN_INIT bound to: 4'b0100 
+WARNING: [Synth 8-5788] Register payload_reg[0] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:182]
+WARNING: [Synth 8-5788] Register payload_reg[1] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:182]
+WARNING: [Synth 8-5788] Register payload_reg[2] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:182]
+WARNING: [Synth 8-5788] Register payload_reg[3] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:182]
+WARNING: [Synth 8-5788] Register payload_reg[4] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:182]
+WARNING: [Synth 8-5788] Register payload_reg[5] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:182]
+WARNING: [Synth 8-5788] Register payload_reg[6] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:182]
+WARNING: [Synth 8-5788] Register payload_reg[7] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:182]
+WARNING: [Synth 8-5788] Register resp_buf_reg[0] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:194]
+WARNING: [Synth 8-5788] Register resp_buf_reg[1] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:194]
+WARNING: [Synth 8-5788] Register resp_buf_reg[2] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:194]
+WARNING: [Synth 8-5788] Register resp_buf_reg[3] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:194]
+WARNING: [Synth 8-5788] Register resp_buf_reg[4] in module DebugController is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:194]
+INFO: [Synth 8-256] done synthesizing module 'DebugController' (4#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DebugController.v:8]
+INFO: [Synth 8-638] synthesizing module 'CPUTopWithModeSelect' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/CPUTopWithModeSelect.v:3]
+INFO: [Synth 8-638] synthesizing module 'CPUTop' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/CPUTop.v:1]
+INFO: [Synth 8-638] synthesizing module 'IFetch' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/IFetch.v:1]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/imem.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter INIT_FILE bound to: batch_test.txt - type: string 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/imem.v:12]
+INFO: [Synth 8-3876] $readmem data file 'batch_test.txt' is read successfully [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/imem.v:19]
+INFO: [Synth 8-256] done synthesizing module 'imem' (5#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/imem.v:1]
+INFO: [Synth 8-256] done synthesizing module 'IFetch' (6#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/IFetch.v:1]
+INFO: [Synth 8-638] synthesizing module 'control' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/control.v:1]
+INFO: [Synth 8-256] done synthesizing module 'control' (7#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/control.v:1]
+INFO: [Synth 8-638] synthesizing module 'imm_process' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/imm_process.v:1]
+INFO: [Synth 8-256] done synthesizing module 'imm_process' (8#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/imm_process.v:1]
+INFO: [Synth 8-638] synthesizing module 'register' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/register.v:1]
+INFO: [Synth 8-256] done synthesizing module 'register' (9#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/register.v:1]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/alu.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/alu.v:45]
+INFO: [Synth 8-256] done synthesizing module 'alu' (10#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/alu.v:1]
+INFO: [Synth 8-256] done synthesizing module 'CPUTop' (11#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/CPUTop.v:1]
+INFO: [Synth 8-638] synthesizing module 'PipelineCPU' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:1]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_memRead_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:248]
+WARNING: [Synth 8-6014] Unused sequential element id_ex_opcode_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:367]
+WARNING: [Synth 8-5788] Register ex_mem_ecall_reg in module PipelineCPU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:242]
+WARNING: [Synth 8-5788] Register id_ex_ALUOp_reg in module PipelineCPU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:200]
+WARNING: [Synth 8-3848] Net id_ex_countones in module/entity PipelineCPU does not have driver. [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:139]
+INFO: [Synth 8-256] done synthesizing module 'PipelineCPU' (12#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:1]
+WARNING: [Synth 8-350] instance 'pipeline_cpu' of module 'PipelineCPU' requires 23 connections, but only 22 given [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/CPUTopWithModeSelect.v:83]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DataMemory.v:1]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/dmem.v:11]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/dmem.v:20]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (13#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/dmem.v:11]
+WARNING: [Synth 8-689] width (14) of port connection 'addra' does not match port width (15) of module 'dmem' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DataMemory.v:51]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (14#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/DataMemory.v:1]
+INFO: [Synth 8-256] done synthesizing module 'CPUTopWithModeSelect' (15#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/CPUTopWithModeSelect.v:3]
+INFO: [Synth 8-638] synthesizing module 'top_display' [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/top_display.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/top_display.v:19]
+INFO: [Synth 8-256] done synthesizing module 'top_display' (16#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/top_display.v:1]
+INFO: [Synth 8-256] done synthesizing module 'TopDebug' (17#1) [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:1]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addra[16]
+WARNING: [Synth 8-3331] design control has unconnected port inst[11]
+WARNING: [Synth 8-3331] design control has unconnected port inst[10]
+WARNING: [Synth 8-3331] design control has unconnected port inst[9]
+WARNING: [Synth 8-3331] design control has unconnected port inst[8]
+WARNING: [Synth 8-3331] design control has unconnected port inst[7]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port cpu_step
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_en
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_en
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[31]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[30]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[29]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[28]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[27]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[26]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[25]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[24]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[23]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[22]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[21]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[20]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[19]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[18]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[17]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[16]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[15]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[14]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[13]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[12]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[11]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[10]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[9]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[8]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[7]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[6]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[5]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[4]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[3]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[2]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[1]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_dbg_addr[0]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[31]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[30]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[29]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[28]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[27]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[26]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[25]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[24]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[23]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[22]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[21]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[20]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[19]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[18]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[17]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[16]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[15]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[14]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[13]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[12]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[11]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[10]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[9]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[8]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[7]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[6]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[5]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[4]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[3]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[2]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[1]
+WARNING: [Synth 8-3331] design PipelineCPU has unconnected port dmem_wr_data[0]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port cpu_step
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_en
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_wr_en
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_addr[31]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_addr[30]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_addr[29]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_addr[28]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_addr[27]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_addr[26]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_addr[25]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_addr[24]
+WARNING: [Synth 8-3331] design CPUTop has unconnected port dmem_dbg_addr[23]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 561.188 ; gain = 271.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin alu_ex:count_ones to constant 0 [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:197]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 561.188 ; gain = 271.320
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/cpu_project.srcs/constrs_1/new/TopDebug.xdc]
+Finished Parsing XDC File [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/cpu_project.srcs/constrs_1/new/TopDebug.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/cpu_project.srcs/constrs_1/new/TopDebug.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopDebug_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopDebug_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 818.672 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 818.672 ; gain = 528.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 818.672 ; gain = 528.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 818.672 ; gain = 528.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bit_idx" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_idx" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'DebugController'
+INFO: [Synth 8-5544] ROM "payload_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "payload_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "payload_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "payload_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "payload_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "payload_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "payload_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "payload_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "resp_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "resp_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "resp_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "resp_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cpu_halt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cpu_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dbg_reg_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_dbg_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dmem_dbg_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dmem_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_wait_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cmd_payload_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element pc_fetch_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/IFetch.v:39]
+INFO: [Synth 8-5546] ROM "branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "aluSrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "memRead" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jalr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cycle_count_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/CPUTop.v:197]
+WARNING: [Synth 8-6014] Unused sequential element cycle_count_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:210]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/top_display.v:12]
+WARNING: [Synth 8-6014] Unused sequential element clk_count_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:29]
+WARNING: [Synth 8-6014] Unused sequential element clk_p_cnt_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:146]
+WARNING: [Synth 8-6014] Unused sequential element display_val_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:147]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+          S_RECV_PAYLOAD |                              001 |                             0001
+               S_EXECUTE |                              010 |                             0010
+              S_MEM_WAIT |                              011 |                             0101
+             S_SEND_RESP |                              100 |                             0011
+             S_SEND_WAIT |                              101 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'DebugController'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 818.672 ; gain = 528.805
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
+	  32 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 166   
+	   2 Input      3 Bit       Adders := 4     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 91    
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 49    
++---RAMs : 
+	            1024K Bit         RAMs := 1     
+	             512K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     39 Bit        Muxes := 7     
+	   2 Input     32 Bit        Muxes := 35    
+	   6 Input     32 Bit        Muxes := 2     
+	  33 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	  12 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 4     
+	   6 Input      8 Bit        Muxes := 5     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 144   
+	   3 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 4     
+	  20 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  12 Input      2 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 111   
+	   4 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 33    
+	  12 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopDebug 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module UartRx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+Module UartTx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+Module DebugController 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 15    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   5 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 4     
+	   6 Input      8 Bit        Muxes := 5     
+	   6 Input      5 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	  20 Input      3 Bit        Muxes := 1     
+	  12 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	  12 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 31    
+Module imem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             512K Bit         RAMs := 1     
+Module IFetch 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      2 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 3     
+Module imm_process 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 31    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	  32 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+Module CPUTop 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module PipelineCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 14    
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 19    
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+Module dmem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	            1024K Bit         RAMs := 1     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module CPUTopWithModeSelect 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module top_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 163   
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     39 Bit        Muxes := 7     
+	   2 Input     31 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 140   
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element pc_fetch_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/IFetch.v:39]
+INFO: [Synth 8-5546] ROM "branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "aluSrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "memRead" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jalr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cycle_count_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/CPUTop.v:197]
+WARNING: [Synth 8-6014] Unused sequential element pc_fetch_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/IFetch.v:39]
+INFO: [Synth 8-5546] ROM "branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "aluSrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "memRead" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jalr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cycle_count_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/PipelineCPU.v:210]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/top_display.v:12]
+INFO: [Synth 8-5546] ROM "uUartRx/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "uDebugCtrl/resp_buf" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "uDebugCtrl/resp_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uDebugCtrl/resp_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uDebugCtrl/resp_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uDebugCtrl/cmd_payload_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "uDebugCtrl/cpu_halt" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "uDebugCtrl/cpu_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uDebugCtrl/dbg_reg_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uDebugCtrl/inst_dbg_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uDebugCtrl/inst_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uDebugCtrl/inst_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uDebugCtrl/dmem_dbg_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uDebugCtrl/dmem_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "uDebugCtrl/mem_wait_cnt" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element clk_p_cnt_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:146]
+WARNING: [Synth 8-6014] Unused sequential element display_val_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:147]
+WARNING: [Synth 8-6014] Unused sequential element clk_count_reg was removed.  [C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/TopDebug.v:29]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uDebugCtrl/payload_need_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/pipeline_cpu /regfile_inst/\regs_reg[3][31] )
+INFO: [Synth 8-3886] merging instance 'uDebugCtrl/resp_buf_reg[0][6]' (FDE) to 'uDebugCtrl/resp_buf_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'uDebugCtrl/resp_buf_reg[0][5]' (FDE) to 'uDebugCtrl/resp_buf_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'uDebugCtrl/resp_buf_reg[0][4]' (FDE) to 'uDebugCtrl/resp_buf_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'uDebugCtrl/resp_buf_reg[0][3]' (FDE) to 'uDebugCtrl/resp_buf_reg[0][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/single_cycle_cpu /\reg_inst/regs_reg[3][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_119/\display_val_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[31]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[30]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[29]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[28]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[27]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[26]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[25]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[24]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[23]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[22]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[21]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[20]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[19]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[18]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[17]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[16]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[1]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (ifetch_inst/inst_dbg_addr_sync_reg[0]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][31]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][30]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][29]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][28]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][27]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][26]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][25]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][24]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][23]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][22]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][21]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][20]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][19]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][18]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][17]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][16]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][15]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][14]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][13]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][12]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][11]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][10]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][9]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][8]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][7]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][6]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][5]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][4]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][3]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][2]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][1]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[0][0]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][31]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][30]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][29]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][28]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][27]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][26]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][25]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][24]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][23]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][22]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][21]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][20]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][19]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][18]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][17]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][16]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][15]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][14]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][13]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][12]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][11]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][10]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][9]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][8]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][7]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][6]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][5]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][4]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][3]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][2]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][1]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (reg_inst/regs_reg[3][0]) is unused and will be removed from module CPUTop.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[31]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[30]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[29]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[28]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[27]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[26]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[25]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[24]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[23]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[22]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[21]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[20]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[19]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[18]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[17]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[16]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[1]) is unused and will be removed from module IFetch.
+WARNING: [Synth 8-3332] Sequential element (inst_dbg_addr_sync_reg[0]) is unused and will be removed from module IFetch.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/id_ex_memToReg_reg' (FDCE) to 'u_cpu/pipeline_cpu/id_ex_memRead_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:24 ; elapsed = 00:06:41 . Memory (MB): peak = 891.219 ; gain = 601.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|imem:       | mem_reg                             | 16 K x 32(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 16     | 
+|imem:       | mem_reg                             | 16 K x 32(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 16     | 
+|TopDebug    | u_cpu/shared_dmem/uram_inst/mem_reg | 16 K x 32(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 16     | 
++------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:33 ; elapsed = 00:06:50 . Memory (MB): peak = 971.305 ; gain = 681.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:07:42 ; elapsed = 00:08:03 . Memory (MB): peak = 1203.426 ; gain = 913.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name              | RTL Object                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\u_cpu/single_cycle_cpu  | ifetch_inst/uimem/mem_reg           | 16 K x 32(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 16     | 
+|imem:                    | mem_reg                             | 16 K x 32(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 16     | 
+|TopDebug                 | u_cpu/shared_dmem/uram_inst/mem_reg | 16 K x 32(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 16     | 
++-------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[10]' (FDC) to 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[11]' (FDC) to 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[8]' (FDC) to 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[9]' (FDC) to 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[30]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[31]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[28]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[29]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[12]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[13]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[26]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[27]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[0]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[1]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[2]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[3]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[6]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[7]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[4]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[5]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[18]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[19]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[14]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[15]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[16]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[17]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[20]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[21]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[24]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[25]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_en_sync_reg' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_en_sync_reg'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[22]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_wr_data_sync_reg[23]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_wr_data_sync_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[2]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[3]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[4]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[5]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[6]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[7]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[8]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[9]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[10]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[11]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[12]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[13]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[14]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_addr_sync_reg[15]' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_addr_sync_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/pipeline_cpu/ifetch_inst/inst_dbg_en_sync_reg' (FDC) to 'u_cpu/single_cycle_cpu/ifetch_inst/inst_dbg_en_sync_reg'
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_15 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_15 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_15 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:54 ; elapsed = 00:08:15 . Memory (MB): peak = 1305.227 ; gain = 1015.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net \u_cpu/shared_dmem/uram_wea  is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net \u_cpu/single_cycle_cpu/ifetch_inst/rom_wea  is driving 128 big block pins (URAM, BRAM and DSP loads). Created 13 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:56 ; elapsed = 00:08:17 . Memory (MB): peak = 1305.227 ; gain = 1015.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:56 ; elapsed = 00:08:17 . Memory (MB): peak = 1305.227 ; gain = 1015.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:57 ; elapsed = 00:08:18 . Memory (MB): peak = 1305.227 ; gain = 1015.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:57 ; elapsed = 00:08:18 . Memory (MB): peak = 1305.227 ; gain = 1015.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:57 ; elapsed = 00:08:18 . Memory (MB): peak = 1305.227 ; gain = 1015.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:57 ; elapsed = 00:08:18 . Memory (MB): peak = 1305.227 ; gain = 1015.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     2|
+|2     |CARRY4      |   202|
+|3     |LUT1        |    43|
+|4     |LUT2        |   484|
+|5     |LUT3        |   326|
+|6     |LUT4        |   505|
+|7     |LUT5        |  1091|
+|8     |LUT6        |  2388|
+|9     |MUXF7       |   831|
+|10    |MUXF8       |   192|
+|11    |RAMB36E1    |     2|
+|12    |RAMB36E1_1  |     2|
+|13    |RAMB36E1_10 |     2|
+|14    |RAMB36E1_11 |     2|
+|15    |RAMB36E1_12 |     2|
+|16    |RAMB36E1_13 |     2|
+|17    |RAMB36E1_14 |     2|
+|18    |RAMB36E1_15 |     2|
+|19    |RAMB36E1_16 |    16|
+|20    |RAMB36E1_2  |     2|
+|21    |RAMB36E1_3  |     2|
+|22    |RAMB36E1_4  |     2|
+|23    |RAMB36E1_5  |     2|
+|24    |RAMB36E1_6  |     2|
+|25    |RAMB36E1_7  |     2|
+|26    |RAMB36E1_8  |     2|
+|27    |RAMB36E1_9  |     2|
+|28    |FDCE        |  3026|
+|29    |FDPE        |     4|
+|30    |FDRE        |   110|
+|31    |IBUF        |     4|
+|32    |OBUF        |    25|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------------------+---------------------+------+
+|      |Instance             |Module               |Cells |
++------+---------------------+---------------------+------+
+|1     |top                  |                     |  9281|
+|2     |  uDebugCtrl         |DebugController      |   403|
+|3     |  uUartRx            |UartRx               |    88|
+|4     |  uUartTx            |UartTx               |    67|
+|5     |  u_cpu              |CPUTopWithModeSelect |  8026|
+|6     |    pipeline_cpu     |PipelineCPU          |  4239|
+|7     |      ifetch_inst    |IFetch_0             |   966|
+|8     |        uimem        |imem_2               |    70|
+|9     |      regfile_inst   |register_1           |  2440|
+|10    |    shared_dmem      |DataMemory           |   196|
+|11    |      uram_inst      |dmem                 |   148|
+|12    |    single_cycle_cpu |CPUTop               |  3586|
+|13    |      alu_inst       |alu                  |    16|
+|14    |      ifetch_inst    |IFetch               |   753|
+|15    |        uimem        |imem                 |   618|
+|16    |      reg_inst       |register             |  2776|
+|17    |  u_top_display      |top_display          |    73|
++------+---------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:57 ; elapsed = 00:08:18 . Memory (MB): peak = 1305.227 ; gain = 1015.359
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 392 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:33 ; elapsed = 00:08:09 . Memory (MB): peak = 1305.227 ; gain = 757.875
+Synthesis Optimization Complete : Time (s): cpu = 00:07:57 ; elapsed = 00:08:18 . Memory (MB): peak = 1305.227 ; gain = 1015.359
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1277 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 16 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+329 Infos, 242 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:02 ; elapsed = 00:08:25 . Memory (MB): peak = 1305.227 ; gain = 1028.039
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Copernicus/Work/VivadoProjects/cpu-project-cs202_cpu-main/cpu-project-cs202_cpu-main/cpu_project/cpu_project.runs/synth_1/TopDebug.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopDebug_utilization_synth.rpt -pb TopDebug_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1305.227 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 16 13:06:52 2026...

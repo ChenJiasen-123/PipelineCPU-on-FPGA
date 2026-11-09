@@ -1,0 +1,131 @@
+ChenJiasen-123 : 12512805 陈家森
+musH0514       : 12412946 黄一莉
+hcy11122323    : 12410918 胡晨宇
+
+
+348150b | 2026-05-31 23:59:20 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  add gitlog.txt file
+9c69849 | 2026-05-31 22:50:57 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  add some txt files
+6226780 | 2026-05-31 21:27:48 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  Merge branch 'main' of https://github.com/CS202ComputerOrganization/cpu-project-cs202_cpu
+2c9869e | 2026-05-31 21:27:35 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  插入自定义指令
+8fce950 | 2026-05-31 21:26:42 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #42 from CS202ComputerOrganization/chen2
+015000c | 2026-05-31 21:26:04 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  commit the gitlog.txt
+11628a0 | 2026-05-31 21:20:33 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #41 from CS202ComputerOrganization/chen2
+a1ad778 | 2026-05-31 21:20:03 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  .
+3f9a412 | 2026-05-31 21:10:50 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #40 from CS202ComputerOrganization/chen
+e663acf | 2026-05-31 21:09:35 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  Merge branch 'main' of github.com:CS202ComputerOrganization/cpu-project-cs202_cpu into chen
+35f6ae1 | 2026-05-31 21:07:58 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  rename some files and add bitstream file
+ac0226e | 2026-05-29 23:49:31 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #39 from CS202ComputerOrganization/huang1
+7b0ce44 | 2026-05-29 23:48:48 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  更新加速指令相关
+b90dd42 | 2026-05-29 19:48:38 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #38 from CS202ComputerOrganization/chen2
+46ec181 | 2026-05-29 19:47:45 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  restore LoopTest file
+bac913c | 2026-05-29 15:53:57 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #37 from CS202ComputerOrganization/main
+ddfa55c | 2026-05-29 15:31:32 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #36 from CS202ComputerOrganization/chen2
+accae12 | 2026-05-29 15:30:30 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  Pipeline can pass all the branchtest!
+effaa36 | 2026-05-29 13:58:11 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  Change the clock frequency of Pipeline to 50MHz
+7614a39 | 2026-05-25 20:29:30 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #35 from CS202ComputerOrganization/main
+1bf2040 | 2026-05-25 18:09:52 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #34 from CS202ComputerOrganization/chen2
+f1c01cc | 2026-05-25 18:07:21 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  reslove any problems of pipeline
+cd0f05c | 2026-05-25 01:03:31 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #32 from CS202ComputerOrganization/main
+eac5c95 | 2026-05-25 01:00:59 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  update case6 asm
+8cd5ab4 | 2026-05-25 00:47:44 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #31 from CS202ComputerOrganization/main
+41b69fb | 2026-05-25 00:44:20 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #30 from CS202ComputerOrganization/huang1
+6dc94b0 | 2026-05-25 00:42:01 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  update asm, though it fails
+138ae9b | 2026-05-24 20:39:24 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  Merge branch 'huang1' of https://github.com/CS202ComputerOrganization/cpu-project-cs202_cpu into huang1
+5fec81a | 2026-05-24 20:33:45 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #29 from CS202ComputerOrganization/main
+536fea3 | 2026-05-24 20:22:52 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #28 from CS202ComputerOrganization/chen1
+d0546b0 | 2026-05-24 20:10:05 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  删掉了多余的ecall
+4c41251 | 2026-05-24 18:59:07 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  fix bugs in codes and update asm for case10
+04584c5 | 2026-05-24 18:36:16 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #27 from CS202ComputerOrganization/chen1
+7d7c3e0 | 2026-05-24 18:35:49 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  1
+6f83b4b | 2026-05-24 18:27:19 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  补充了引脚
+5715658 | 2026-05-24 14:34:33 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #26 from CS202ComputerOrganization/main
+7d84f6e | 2026-05-23 21:11:02 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #25 from CS202ComputerOrganization/chen1
+88255d3 | 2026-05-23 21:10:54 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge branch 'main' into chen1
+628ef97 | 2026-05-23 20:55:21 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  流水线debug
+e743856 | 2026-05-23 16:30:59 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update TopDebug.v
+fb87975 | 2026-05-23 16:30:21 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Add cpu_ecall input to DebugController module
+beecdc9 | 2026-05-23 16:29:20 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  ecall
+c89acf2 | 2026-05-23 16:28:45 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  ecsll
+515cbe4 | 2026-05-22 21:58:20 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  基本实现各种冒险和前递
+42d0e17 | 2026-05-21 13:39:47 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  新增了流水线功能
+a4174b6 | 2026-05-21 13:17:48 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #24 from CS202ComputerOrganization/main
+a6270ff | 2026-05-21 12:26:00 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update CPUTop.v
+ebfe273 | 2026-05-21 12:25:28 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update IFetch.v
+893fd2e | 2026-05-21 12:24:34 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update imm_process.v
+d219bf8 | 2026-05-21 12:24:01 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  fix
+a987c7f | 2026-05-20 21:35:56 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  add case9 asm
+9aea79a | 2026-05-20 02:53:39 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #23 from CS202ComputerOrganization/huang1
+347abdd | 2026-05-20 02:51:48 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  update asm and hex
+eaaf70f | 2026-05-20 00:19:17 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  Merge branch 'huang1' of https://github.com/CS202ComputerOrganization/cpu-project-cs202_cpu into huang1
+98bd11a | 2026-05-20 00:18:28 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #22 from CS202ComputerOrganization/main
+61e162c | 2026-05-20 00:15:56 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  delete old file
+64bc875 | 2026-05-20 00:15:04 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  update files
+0dbf82a | 2026-05-19 23:24:32 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  delete unused file
+940257e | 2026-05-19 19:04:25 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  add count_ones
+9bdd94d | 2026-05-19 14:18:47 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #21 from CS202ComputerOrganization/main
+61c4058 | 2026-05-19 14:14:47 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update CPUTop.v
+f172ced | 2026-05-19 14:14:02 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update control.v
+4a8263a | 2026-05-19 14:13:29 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  jal support
+a4f7aee | 2026-05-17 17:46:30 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #20 from CS202ComputerOrganization/chen1
+1c41f85 | 2026-05-17 17:44:53 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  修复了lw和sw问题
+4505797 | 2026-05-15 17:24:31 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #19 from CS202ComputerOrganization/main
+9ad5790 | 2026-05-15 00:57:54 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #18 from CS202ComputerOrganization/chen1
+bee74a9 | 2026-05-15 00:56:03 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  补充了dmem.v
+08f7dbf | 2026-05-15 00:12:41 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #17 from CS202ComputerOrganization/chen1
+14da011 | 2026-05-15 00:11:52 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  修改了dmem的层级，用DataMemory作为上层debug控制，同时修改了寄存器数据冲突
+742c61a | 2026-05-14 13:56:23 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update CPUTop.v
+ddb3aac | 2026-05-14 13:54:07 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update CPUTop.v
+947824c | 2026-05-14 13:50:38 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update TopDebug.v
+519f264 | 2026-05-14 13:49:48 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update register.v
+234de57 | 2026-05-14 13:49:13 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update imem.v
+94c7489 | 2026-05-14 13:48:47 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update IFetch.v
+06e40c1 | 2026-05-14 13:47:57 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Update dmem.v
+6fc4c21 | 2026-05-14 13:47:08 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  支持更多运算
+3ec0f2a | 2026-05-14 11:34:29 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #16 from CS202ComputerOrganization/huang1
+fd3d462 | 2026-05-14 11:34:01 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  添加了测试16进制指令，删除了xpr中没用的模块，调整了模块的结构，能够成功生成比特流
+ce4b0dc | 2026-05-14 00:05:16 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  unused
+5d9b18e | 2026-05-13 22:58:54 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #15 from CS202ComputerOrganization/chen1
+55d29fa | 2026-05-13 22:58:35 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge branch 'main' into chen1
+d077450 | 2026-05-13 20:33:26 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  move asm
+4869f97 | 2026-05-13 20:00:19 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  完成asm初步设计
+4235a09 | 2026-05-13 01:08:15 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  添加了引脚约束并生成比特流文件，添加时钟物理降频
+a597d2b | 2026-05-12 21:24:11 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  添加了uart的相关功能代码
+5c35b00 | 2026-05-12 16:40:34 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  绑定了clk和rst的引脚
+9c1b69c | 2026-05-12 16:40:12 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  synthesis通过了，但是implementation不通过
+faffd6b | 2026-05-12 15:29:23 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  remove instruction files
+71c40c1 | 2026-05-12 14:00:02 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #11 from CS202ComputerOrganization/chen
+dec544d | 2026-05-12 13:53:29 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  删除了8bit,修改了ifetch和immGen的一个移位冲突
+71bef3c | 2026-05-12 11:23:11 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  删除了路径错误的模块
+1da5195 | 2026-05-12 00:39:04 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  添加了Q3.4定点数
+5d13b88 | 2026-05-12 00:38:26 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  解决了合并冲突
+57d268b | 2026-05-12 00:25:50 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  “补充了count_one_in_8bit文件内容，输入8bit数据输出1的个数”
+934323e | 2026-05-12 00:07:36 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  添加了Q3.4定点数
+6078ce3 | 2026-05-11 20:24:40 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #9 from CS202ComputerOrganization/huang
+3126a73 | 2026-05-11 20:21:48 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  update .xpr project
+1239e6f | 2026-05-11 20:09:51 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #8 from CS202ComputerOrganization/main
+f12720c | 2026-05-11 20:04:18 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #7 from CS202ComputerOrganization/huang
+7fc21a6 | 2026-05-11 20:01:18 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  调整了项目的结构，完成了TopDebug.v模块
+25ff488 | 2026-05-10 16:19:58 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #6 from CS202ComputerOrganization/main
+f18623b | 2026-05-10 16:14:36 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  update imem&pc
+79d6f46 | 2026-05-10 15:40:26 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  Merge branch 'main' of https://github.com/CS202ComputerOrganization/cpu-project-cs202_cpu
+6a95505 | 2026-05-10 15:40:11 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  delete duplicate regs.v
+5a6137a | 2026-05-10 15:39:59 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Create imm generator.v
+652c6e5 | 2026-05-10 15:26:54 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #5 from CS202ComputerOrganization/hu
+3ef9df2 | 2026-05-10 03:03:30 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #4 from CS202ComputerOrganization/huang
+1773c6c | 2026-05-10 03:01:30 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  instruction memeory & fetch
+6280628 | 2026-05-09 16:25:18 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #3 from CS202ComputerOrganization/huang
+96997b3 | 2026-05-09 16:24:01 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  1
+2189acc | 2026-05-09 15:53:49 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Create control.v
+7358ba6 | 2026-05-09 15:45:59 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  1
+7b463f9 | 2026-05-09 15:44:21 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Rename dmem to dmem.v
+640e505 | 2026-05-09 15:44:07 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Rename pc to pc.v
+8b81e8c | 2026-05-09 14:41:19 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  pc module
+55ded97 | 2026-05-07 19:05:22 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Add dmem module for single-port synchronous BRAM
+2de0f3d | 2026-05-07 19:04:07 +0800 | Author:胡晨宇<12410918@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Create regs.v
+9508959 | 2026-05-06 23:47:55 +0800 | Author:Yili Huang<mushyl_1801029@qq.com> | commiter:GitHub<noreply@github.com> |  Merge pull request #2 from CS202ComputerOrganization/huang
+6e2b43c | 2026-05-06 23:41:51 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  1
+ca54b32 | 2026-05-05 13:32:39 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:GitHub<noreply@github.com> |  Merge pull request #1 from CS202ComputerOrganization/chen
+fff74ac | 2026-05-05 13:31:27 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  chen: finish alu, 16-bit-floatpoint
+fda2377 | 2026-05-01 00:04:04 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  chen : add alu
+9fa2a0c | 2026-04-30 23:58:39 +0800 | Author:ChenJiasen-123<12512805@mail.sustech.edu.cn> | commiter:ChenJiasen-123<12512805@mail.sustech.edu.cn> |  chen: add alu
+39a36d8 | 2026-04-28 16:07:32 +0800 | Author:musH0514<mushyl_1801029@qq.com> | commiter:musH0514<mushyl_1801029@qq.com> |  instructions and gitignore

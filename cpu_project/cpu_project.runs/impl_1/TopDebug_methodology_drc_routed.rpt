@@ -1,0 +1,386 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Jun 16 13:10:01 2026
+| Host         : Chen running 64-bit major release  (build 9200)
+| Command      : report_methodology -file TopDebug_methodology_drc_routed.rpt -pb TopDebug_methodology_drc_routed.pb -rpx TopDebug_methodology_drc_routed.rpx
+| Design       : TopDebug
+| Device       : xc7a35tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 70
++-----------+----------+--------------------------------------------+------------+
+| Rule      | Severity | Description                                | Violations |
++-----------+----------+--------------------------------------------+------------+
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 42         |
+| TIMING-18 | Warning  | Missing input or output delay              | 28         |
++-----------+----------+--------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_11, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/pipeline_cpu/ifetch_inst/uimem/mem_reg_9, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_10, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_11, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_12, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_13, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_14, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_15, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/shared_dmem/uram_inst/mem_reg_9, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_10, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_11, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_12, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_13, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#33 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_14, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#34 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_15, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#35 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#36 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#37 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#38 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#39 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#40 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#41 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_8, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#42 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_cpu/single_cycle_cpu/ifetch_inst/uimem/mem_reg_9, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on pipeline_mode relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on rst relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on uart_rxd relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on p7_0[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on p7_0[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on p7_0[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on p7_0[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on p7_0[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on p7_0[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on p7_0[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on p7_0[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on p7_1[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on p7_1[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on p7_1[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on p7_1[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on p7_1[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on p7_1[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on p7_1[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on p7_1[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on p7_2[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on p7_2[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on p7_2[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on p7_2[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on p7_2[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on p7_2[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on p7_2[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on p7_2[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on uart_txd relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+
